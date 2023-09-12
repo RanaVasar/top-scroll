@@ -1,0 +1,39 @@
+html {
+    scroll-behavior:smooth;
+  }
+  body {
+    position: relative;
+  }
+  .section {
+    height: 100vh;
+    background: #dedede;
+    margin-bottom: 20px;
+    font-size: 100px;
+  }
+  
+  .scroll-container {
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100%;
+    padding: 50px;
+  }
+  
+  .scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+  }
+  
+  .scroll-container a {
+    position: sticky;
+    top: 88vh;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+  }
